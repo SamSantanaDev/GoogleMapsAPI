@@ -1,0 +1,101 @@
+html,
+body {
+font-family: sans-serif;
+  height: 100%;
+  margin: 10px;
+  /* padding: 10px; */
+  background-color: #f2f2f2;
+}
+body {
+  outline: solid darkcyan;
+}
+h1 {
+
+  color: rgb(222, 222, 222);
+  font-size: xx-large;
+  font-weight: bold;
+}
+h2 {
+  font-size: x-large;
+  color: rgb(222, 222, 222);
+  /* font-weight: bold; */
+}
+p{  color: rgb(222, 222, 222);
+
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  background-color: darkcyan;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  /* outline: double; */
+  outline-color: black;
+}
+
+.quiz-container {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+}
+
+.quiz-container h2 {
+  color: darkcyan;
+  margin-bottom: 20px;
+}
+
+#question {
+  padding: 15px;
+  font-size: x-large;
+}
+#score {
+  padding: 30px;
+  transition: background-color 0.5s; /* Smooth transition for background color */
+}
+
+
+.shake-green {
+  animation: shake 0.5s; /* Referencing the shake keyframes */
+  background-color: green; /* Highlight in red */
+}
+
+.shake-red {
+  animation: shake 0.5s; /* Referencing the shake keyframes */
+  background-color: red; /* Highlight in red */
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+}
+
+#question1 {
+  min-height: 50px;
+  font-size: x-large;
+}
+
+button#nextQuestion {
+  background-color: darkcyan;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button#nextQuestion:hover {
+  background-color: rgb(20, 84, 84); /* Darker green on hover */
+}
+
+#map {
+  width: 80%;
+  max-width: 800px;
+  height: 650px;
+  margin: 20px auto;
+  border: 3px solid darkcyan;
+}
